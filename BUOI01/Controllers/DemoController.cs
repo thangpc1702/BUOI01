@@ -17,6 +17,23 @@ namespace BUOI01.Controllers
         {
             return new Random().Next(10,100);
         }
+
+        public IActionResult Demo()
+        {
+
+            return View();
+        }
+
+        public IActionResult TuDien()
+        {
+            return View();
+        }
+
+        //host:port/demo/hcn?dai=11&&rong=9
+        public IActionResult HCN(double dai, double rong)
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

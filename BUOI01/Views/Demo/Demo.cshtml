@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Demo";
+    int[] mang = {1,3,5,7,9 };
+    var chuoi = $"Cac phan tu trong mang: {mang[0]}" + $"{string.Join(", ", mang)}";
+}
+
+<h1>Demo</h1>
+@chuoi
+<div>Mang co @mang.Length phan tu</div>
+<div>@string.Join(", ", mang)</div>
+
