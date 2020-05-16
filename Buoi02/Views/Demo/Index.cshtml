@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    //Khai báo hàng hóa kiểu 1
+    HangHoa hh = new HangHoa
+    {
+        MaHang = 1,
+        TenHangHoa = "DELL Ins",
+        DonGia = 143535,
+        GiamGia = 0.07
+    };
+
+    //Khai báo hàng hóa cách 2
+    HangHoa hh2 = new HangHoa();
+    hh2.MaHang = 2;
+    hh2.TenHangHoa = "Honda";
+    hh2.DonGia = 21321321;
+    hh2.GiamGia = 0.05;
+}
+
+<div>
+    @hh.TenHangHoa - @hh.GiaBan
+</div>
+<div>
+    @hh2.TenHangHoa - @hh2.GiaBan
+</div>
+
+<h1>INDEX demo buoi 2</h1>
